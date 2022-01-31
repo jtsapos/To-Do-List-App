@@ -16,3 +16,12 @@ function newItem() {
     //list.appendChild(li);
     $('#list').append(li);
   }
+
+  //2. Explanation: Crossing out an item from the list of items:
+  function crossOut() {
+    //li.classList.toggle('strike');
+    li.toggleClass('strike');
+  }
+
+  //li.addEventListener('dblclick', crossOut);
+  li.on('dblclick', crossOut);
