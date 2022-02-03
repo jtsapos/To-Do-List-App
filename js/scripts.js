@@ -22,14 +22,16 @@ function newItem() {
 
   //2. Crossing out an item from the list of items:
   function crossOut() {
-    //li.addEventListener('dblclick', crossOut);
-    li.on('dblclick', crossOut); //Here, on is equivalent to addEventListener in JavaScript and takes two arguments.
-    //The first one is the event (in this case it’s the click event) and the second argument takes a function where you add the css class strike to the li element
-    // when it is clicked on.
+
     //li.classList.toggle('strike'); //creates a CSS class strike that will apply line-through on the text: .strike{text-decoration: line-through;}.
     li.addClass('strike'); //Then, you can add this class into the li element using jQuery: li.addClass("strike");
     //By doing this the list item li should be crossed out but still visible.
   };
+  //li.addEventListener('dblclick', crossOut);
+  li.on('dblclick', crossOut); //Here, on is equivalent to addEventListener in JavaScript and takes two arguments.
+  //The first one is the event (in this case it’s the click event) and the second argument takes a function where you add the css class strike to the li element
+  // when it is clicked on.
+
 
   //3(i). Adding the delete button 'X':
   //let crossOutButton = document.createElement('crossOutButton');
